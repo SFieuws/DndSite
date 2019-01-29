@@ -4,8 +4,13 @@ export class Url {
     public get name() {
         return this._name;
     }
-
     public get url() {
         return this._url;
+    }
+    public set name(name: string) {
+        this._name = name;
+    }
+    public set url(url: string) {
+        this._url = url;
     }
 }
