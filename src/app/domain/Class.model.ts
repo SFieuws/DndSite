@@ -11,7 +11,8 @@ export class Class {
     private _proficiencies: Proficiency[],
     private _savingThrows: AbilityScore[],
     private _startingEquipment: Equipment[],
-    private _subclasses: Subclass[]) {}
+    private _subclasses: Subclass[]
+    ) {}
 
   public get name() {
     return this._name;
@@ -28,7 +29,7 @@ export class Class {
   public get savingThrows() {
     return this._savingThrows;
   }
-  public get startingEquipment() {
+  public get equipment() {
     return this._startingEquipment;
   }
   public get subclasses() {
