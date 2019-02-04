@@ -1,5 +1,5 @@
 import { Class } from "./Class.model";
-import { Equipment } from "./Equipment.model";
+import { Equipment } from "./equipment/Equipment.model";
 import { Proficiency } from "./Proficiency.model";
 import { Race } from "./Race.model";
 
@@ -90,8 +90,7 @@ export class Character {
     }
     public set coin(coin: number) {
         this._coin = coin;
-    }
-    
+    }    
     public addCoin(coin: number) {
         this._coin += coin;
     }

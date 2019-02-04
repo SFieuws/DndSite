@@ -1,4 +1,5 @@
 export class Url {
+    //Class to help get API calls. If you search for objects, you will first get the name of the object with the url to acces all the information about this object
     constructor(private _name: string, private _url: string) { }
 
     public get name() {
