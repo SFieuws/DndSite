@@ -1,6 +1,6 @@
 import { Class } from "./classes/Class.model";
 import { Equipment } from "./equipment/Equipment.model";
-import { Proficiency } from "./Proficiency.model";
+import { Proficiency } from "./characterData/Proficiency.model";
 import { Race } from "./races/Race.model";
 
 export class Character {

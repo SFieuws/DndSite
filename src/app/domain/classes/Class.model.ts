@@ -1,5 +1,5 @@
-import { Proficiency } from "../Proficiency.model";
-import { AbilityScore } from "../AbilityScore.model";
+import { Proficiency } from "../characterData/Proficiency.model";
+import { AbilityScore } from "../characterData/AbilityScore.model";
 import { Equipment } from "../equipment/Equipment.model";
 import { Subclass } from "./Subclass.model";
 

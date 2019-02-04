@@ -1,6 +1,6 @@
 import { Race } from './Race.model';
-import { Proficiency } from '../Proficiency.model';
-import { Language } from '../Language';
+import { Proficiency } from '../characterData/Proficiency.model';
+import { Language } from '../characterData/Language';
 import { Trait } from './Trait.model';
 
 export class Subrace {   

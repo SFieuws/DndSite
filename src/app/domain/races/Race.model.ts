@@ -1,5 +1,5 @@
-import { Proficiency } from '../Proficiency.model';
-import { Language } from '../Language';
+import { Proficiency } from '../characterData/Proficiency.model';
+import { Language } from '../characterData/Language';
 import { Trait } from './Trait.model';
 import { Subrace } from './Subrace.model';
 

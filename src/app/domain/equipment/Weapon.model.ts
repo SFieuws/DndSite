@@ -1,5 +1,5 @@
 import { Equipment } from './Equipment.model';
-import { Damage } from '../Damage.model';
+import { Damage } from '../mechanics/Damage.model';
 
 export class Weapon extends Equipment {
     private _category: string;
