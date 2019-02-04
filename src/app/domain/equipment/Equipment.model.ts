@@ -1,3 +1,5 @@
+import { Price } from '../financial/Price.model';
+
 export abstract class Equipment {
     private _id: string;
     private _name: string;
@@ -5,7 +7,7 @@ export abstract class Equipment {
     private _weight: number;
     private _desc?: string; //make description optional 
 
-	constructor(id: string, name: string, price: number, weight: number, desc?: string) {
+    constructor(id: string, name: string, price: number, weight: number, desc?: string) {
         this._id = id;
         this._name = name;
         this._price = price;

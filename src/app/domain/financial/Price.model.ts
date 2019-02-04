@@ -1,8 +1,10 @@
+import { CoinUnit } from "./CoinUnit";
+
 export class Price {
     private _quantity: number;
-    private _unit: string;
+    private _unit: CoinUnit;
 
-    constructor(quantity: number, unit: string) {
+    constructor(quantity: number, unit: CoinUnit) {
         this._quantity = quantity;
         this._unit = unit;
     }

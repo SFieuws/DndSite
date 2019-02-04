@@ -6,7 +6,7 @@ export class Weapon extends Equipment {
     private _weaponRange: string;
     private _damage: Damage;
     private _closeRange: number;
-    private _longRange?: number; //mellee weapons have no long range, so this is optional
+    private _longRange?: number; //melee weapons have no long range, so this is optional
     //private _properties: Property; this will be something like heavy, versitile
 
 	constructor(id: string, name: string, price: number, weight: number, category: string, weaponRange: string, damage: Damage, closeRange: number, desc?: string /*properties: Property*/) {
