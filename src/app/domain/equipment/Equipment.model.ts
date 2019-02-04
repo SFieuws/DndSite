@@ -1,13 +1,11 @@
-import { Price } from '../Price.model';
-
 export abstract class Equipment {
     private _id: string;
     private _name: string;
-    private _price: Price;
+    private _price: number;
     private _weight: number;
     private _desc?: string; //make description optional 
 
-	constructor(id: string, name: string, price: Price, weight: number, desc?: string) {
+	constructor(id: string, name: string, price: number, weight: number, desc?: string) {
         this._id = id;
         this._name = name;
         this._price = price;
@@ -15,11 +13,15 @@ export abstract class Equipment {
         this._desc = desc;
 	}
     
+    public getCalculatedPrice(): string {
+        //calculate the price and give it back, like 3sp and 2cp
+        return "";
+    }
 
 	public get name(): string {
 		return this._name;
     }
-    public get price(): Price {
+    public get price(): number {
         return this._price;
     }
     public get weight(): number {
@@ -32,7 +34,7 @@ export abstract class Equipment {
     public set name(name: string) {
         this._name = name;
     }
-    public set price(price: Price) {
+    public set price(price: number) {
         this._price = price;
     }
     public set weight(weight: number) {
