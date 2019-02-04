@@ -13,10 +13,11 @@ export class Character {
         private _faction: string,
         private _level: number,
         private _inspiration: number,
-        private _abilities: Int16Array[6], //no idea if this is correct, but I would only keep numbers for the ability scores. Index 0 is Str, index 1 is Dex,... 
+        //private _abilities: Int16Array[6], //no idea if this is correct, but I would only keep numbers for the ability scores. Index 0 is Str, index 1 is Dex,... 
         private _proficiencies: Proficiency[],
         private _equipment: Equipment[],
-        private _coin: number
+        private _coin: number,
+        private _languages: string[]
     ) { } //The rest of the information on a character sheet can be calculated with these values
 
     public get name() {
@@ -42,9 +43,6 @@ export class Character {
     }
     public get inspiration() {
         return this._inspiration;
-    }
-    public get abilities() {
-        return this._abilities;
     }
     public get proficiencies() {
         return this._proficiencies;
@@ -79,9 +77,6 @@ export class Character {
     public set inspiration(inspiration: number) {
         this._inspiration = inspiration;
     }
-    public set abilities(abilities: number) {
-        this._abilities = abilities;
-    }
     public set proficiencies(proficiencies: Proficiency[]) {
         this._proficiencies = proficiencies;
     }
@@ -90,11 +85,12 @@ export class Character {
     }
     public set coin(coin: number) {
         this._coin = coin;
-    }    
-    public addCoin(coin: number) {
-        this._coin += coin;
     }
-    public withdrawCoin(coin: number) {
-        this._coin -= coin; //TODO: check if the coin has a negative value
+    
+    public changeCoin(coin: number, addCoin: boolean) { //0 is substract, 1 is add
+        if (addCoin)
+            this._coin += coin;
+        else
+            this._coin -= coin; //Check for negative values in frontend
     }
 }
