@@ -1,7 +1,7 @@
-import { Class } from "./Class.model";
+import { Class } from "./classes/Class.model";
 import { Equipment } from "./equipment/Equipment.model";
 import { Proficiency } from "./Proficiency.model";
-import { Race } from "./Race.model";
+import { Race } from "./races/Race.model";
 
 export class Character {
     constructor(private _id: string,

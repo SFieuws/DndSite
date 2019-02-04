@@ -1,27 +1,16 @@
+import { Price } from '../financial/Price.model';
+
 export abstract class Equipment {
     private _id: string;
     private _name: string;
-    private _price: number;
+    private _price: Price;
     private _weight: number;
     private _desc?: string; //make description optional 
-
-	constructor(id: string, name: string, price: number, weight: number, desc?: string) {
-        this._id = id;
-        this._name = name;
-        this._price = price;
-        this._weight = weight;
-        this._desc = desc;
-	}
-    
-    public getCalculatedPrice(): string {
-        //calculate the price and give it back, like 3sp and 2cp
-        return "";
-    }
 
 	public get name(): string {
 		return this._name;
     }
-    public get price(): number {
+    public get price(): Price {
         return this._price;
     }
     public get weight(): number {
@@ -34,7 +23,7 @@ export abstract class Equipment {
     public set name(name: string) {
         this._name = name;
     }
-    public set price(price: number) {
+    public set price(price: Price) {
         this._price = price;
     }
     public set weight(weight: number) {

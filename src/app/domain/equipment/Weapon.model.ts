@@ -1,13 +1,13 @@
 import { Equipment } from './Equipment.model';
 import { Damage } from '../Damage.model';
-import { Price } from '../Price.model';
+import { Price } from '../financial/Price.model';
 
 export class Weapon extends Equipment {
     private _category: string;
     private _weaponRange: string;
     private _damage: Damage;
     private _closeRange: number;
-    private _longRange?: number; //mellee weapons have no long range, so this is optional
+    private _longRange?: number; //melee weapons have no long range, so this is optional
     //private _properties: Property; this will be something like heavy, versitile
 
 	constructor(id: string, name: string, price: Price, weight: number, category: string, weaponRange: string, damage: Damage, closeRange: number, desc?: string /*properties: Property*/) {
