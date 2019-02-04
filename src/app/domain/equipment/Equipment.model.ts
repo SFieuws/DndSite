@@ -7,6 +7,15 @@ export abstract class Equipment {
     private _weight: number;
     private _desc?: string; //make description optional 
 
+	constructor(id: string, name: string, price: Price, weight: number, desc?: string) {
+        this._id = id;
+        this._name = name;
+        this._price = price;
+        this._weight = weight;
+        this._desc = desc;
+	}
+    
+
 	public get name(): string {
 		return this._name;
     }

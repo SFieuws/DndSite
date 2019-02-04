@@ -1,11 +1,19 @@
 import { Skill } from "./Skill.model";
 
 export class AbilityScore {
-  constructor(private _id: string,
-    private _name: string,
-    private _fullName: string,
-    private _desc: string,
-    private _skills: Skill[]) {}
+  private _id: string;
+  private _name: string;
+  private _fullName: string;
+  private _desc: string;
+  private _skills: Skill[];
+
+	constructor(id: string, name: string, fullName: string, desc: string, skills: Skill[]) {
+    this._id = id;
+    this._name = name;
+    this._fullName = fullName;
+		this._desc = desc;
+    this._skills = skills;
+	}
 
   public get name() {
     return this._name;

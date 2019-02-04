@@ -1,8 +1,15 @@
 export class Feature { 
-    constructor(private _id: string,
-        private _name: string,
-        private _level: number,
-        private _desc: string) {}
+    private _id: string;
+    private _name: string;
+    private _level: number;
+    private _desc: string;
+
+    constructor(id: string, name: string, level: number, desc: string) {
+        this._id = id;
+        this._name = name;
+        this._level = level;
+        this._desc = desc;
+    }
 
     public get name(): string {
         return this._name;
