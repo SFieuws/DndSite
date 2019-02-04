@@ -1,6 +1,6 @@
 import { Proficiency } from "./Proficiency.model";
 import { AbilityScore } from "./AbilityScore.model";
-import { Equipment } from "./Equipment.model";
+import { Equipment } from "./equipment/Equipment.model";
 import { Subclass } from "./Subclass.model";
 
 export class Class {
